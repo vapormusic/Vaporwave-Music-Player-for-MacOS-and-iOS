@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A23318722569565800C270FA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A23318712569565800C270FA /* SDWebImageSwiftUI */; };
+		A26CDA7325693CDB00BC7055 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA7225693CDB00BC7055 /* Tests_iOS.swift */; };
+		A26CDA7E25693CDB00BC7055 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA7D25693CDB00BC7055 /* Tests_macOS.swift */; };
+		A26CDA8025693CDB00BC7055 /* Vaporwave_Music_PlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA5725693CC900BC7055 /* Vaporwave_Music_PlayerApp.swift */; };
+		A26CDA8125693CDB00BC7055 /* Vaporwave_Music_PlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA5725693CC900BC7055 /* Vaporwave_Music_PlayerApp.swift */; };
+		A26CDA8225693CDB00BC7055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA5825693CC900BC7055 /* ContentView.swift */; };
+		A26CDA8325693CDB00BC7055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA5825693CC900BC7055 /* ContentView.swift */; };
+		A26CDAAC2569454E00BC7055 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A26CDAAB2569454E00BC7055 /* SDWebImage */; };
+		A26CDAAE2569454E00BC7055 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A26CDAAD2569454E00BC7055 /* SDWebImageMapKit */; };
+		A26CDAE225694ABD00BC7055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA5825693CC900BC7055 /* ContentView.swift */; };
+		A26CDAE725694ABD00BC7055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA5825693CC900BC7055 /* ContentView.swift */; };
+		A26CDAF325694BC900BC7055 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A26CDAF225694BC900BC7055 /* SDWebImage */; };
+		A2AB5CC72572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
+		A2AB5CC82572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
+		A2AB5CC92572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
+		A2AB5CCA2572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
+		A2AB5CD42572684400E30E5D /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CD32572684400E30E5D /* a.wav */; };
+		A2AB5CD52572684400E30E5D /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CD32572684400E30E5D /* a.wav */; };
+		A2AB5CD62572684400E30E5D /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CD32572684400E30E5D /* a.wav */; };
+		A2AB5CD72572684400E30E5D /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CD32572684400E30E5D /* a.wav */; };
+		A2DD46202569513D00CF2C50 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A2DD461F2569513D00CF2C50 /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A26CDA6F25693CDB00BC7055 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A26CDA5225693CC400BC7055 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A26CDA5D25693CDB00BC7055;
+			remoteInfo = "Vaporwave Music Player (iOS)";
+		};
+		A26CDA7A25693CDB00BC7055 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A26CDA5225693CC400BC7055 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A26CDA6525693CDB00BC7055;
+			remoteInfo = "Vaporwave Music Player (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A26CDA5725693CC900BC7055 /* Vaporwave_Music_PlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaporwave_Music_PlayerApp.swift; sourceTree = "<group>"; };
+		A26CDA5825693CC900BC7055 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A26CDA5E25693CDB00BC7055 /* Vaporwave Music Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vaporwave Music Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26CDA6125693CDB00BC7055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26CDA6625693CDB00BC7055 /* Vaporwave Music Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vaporwave Music Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26CDA6825693CDB00BC7055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26CDA6925693CDB00BC7055 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A26CDA6E25693CDB00BC7055 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26CDA7225693CDB00BC7055 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		A26CDA7425693CDB00BC7055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26CDA7925693CDB00BC7055 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26CDA7D25693CDB00BC7055 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		A26CDA7F25693CDB00BC7055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26CDB1825694FA100BC7055 /* Vaporwave Music Player.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Vaporwave Music Player.entitlements"; sourceTree = "<group>"; };
+		A2AB5CC62572661500E30E5D /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		A2AB5CD32572684400E30E5D /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = a.wav; path = ../../../../Downloads/a.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A26CDA5B25693CDB00BC7055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23318722569565800C270FA /* SDWebImageSwiftUI in Frameworks */,
+				A26CDAF325694BC900BC7055 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26CDA6325693CDB00BC7055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2DD46202569513D00CF2C50 /* SDWebImageSwiftUI in Frameworks */,
+				A26CDAAE2569454E00BC7055 /* SDWebImageMapKit in Frameworks */,
+				A26CDAAC2569454E00BC7055 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26CDA6B25693CDB00BC7055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26CDA7625693CDB00BC7055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A26CDA5125693CC400BC7055 = {
+			isa = PBXGroup;
+			children = (
+				A26CDB1825694FA100BC7055 /* Vaporwave Music Player.entitlements */,
+				A26CDA5625693CC800BC7055 /* Shared */,
+				A26CDA6025693CDB00BC7055 /* iOS */,
+				A26CDA6725693CDB00BC7055 /* macOS */,
+				A26CDA7125693CDB00BC7055 /* Tests iOS */,
+				A26CDA7C25693CDB00BC7055 /* Tests macOS */,
+				A26CDA5F25693CDB00BC7055 /* Products */,
+				A26CDA9F2569433900BC7055 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A26CDA5625693CC800BC7055 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A2AB5CD32572684400E30E5D /* a.wav */,
+				A26CDA5725693CC900BC7055 /* Vaporwave_Music_PlayerApp.swift */,
+				A26CDA5825693CC900BC7055 /* ContentView.swift */,
+				A2AB5CC62572661500E30E5D /* Sounds.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A26CDA5F25693CDB00BC7055 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A26CDA5E25693CDB00BC7055 /* Vaporwave Music Player.app */,
+				A26CDA6625693CDB00BC7055 /* Vaporwave Music Player.app */,
+				A26CDA6E25693CDB00BC7055 /* Tests iOS.xctest */,
+				A26CDA7925693CDB00BC7055 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A26CDA6025693CDB00BC7055 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A26CDA6125693CDB00BC7055 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		A26CDA6725693CDB00BC7055 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A26CDA6825693CDB00BC7055 /* Info.plist */,
+				A26CDA6925693CDB00BC7055 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		A26CDA7125693CDB00BC7055 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A26CDA7225693CDB00BC7055 /* Tests_iOS.swift */,
+				A26CDA7425693CDB00BC7055 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		A26CDA7C25693CDB00BC7055 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A26CDA7D25693CDB00BC7055 /* Tests_macOS.swift */,
+				A26CDA7F25693CDB00BC7055 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		A26CDA9F2569433900BC7055 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A26CDA5D25693CDB00BC7055 /* Vaporwave Music Player (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26CDA8825693CDB00BC7055 /* Build configuration list for PBXNativeTarget "Vaporwave Music Player (iOS)" */;
+			buildPhases = (
+				A26CDA5A25693CDB00BC7055 /* Sources */,
+				A26CDA5B25693CDB00BC7055 /* Frameworks */,
+				A26CDA5C25693CDB00BC7055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vaporwave Music Player (iOS)";
+			packageProductDependencies = (
+				A26CDAF225694BC900BC7055 /* SDWebImage */,
+				A23318712569565800C270FA /* SDWebImageSwiftUI */,
+			);
+			productName = "Vaporwave Music Player (iOS)";
+			productReference = A26CDA5E25693CDB00BC7055 /* Vaporwave Music Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A26CDA6525693CDB00BC7055 /* Vaporwave Music Player (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26CDA8B25693CDB00BC7055 /* Build configuration list for PBXNativeTarget "Vaporwave Music Player (macOS)" */;
+			buildPhases = (
+				A26CDA6225693CDB00BC7055 /* Sources */,
+				A26CDA6325693CDB00BC7055 /* Frameworks */,
+				A26CDA6425693CDB00BC7055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vaporwave Music Player (macOS)";
+			packageProductDependencies = (
+				A26CDAAB2569454E00BC7055 /* SDWebImage */,
+				A26CDAAD2569454E00BC7055 /* SDWebImageMapKit */,
+				A2DD461F2569513D00CF2C50 /* SDWebImageSwiftUI */,
+			);
+			productName = "Vaporwave Music Player (macOS)";
+			productReference = A26CDA6625693CDB00BC7055 /* Vaporwave Music Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A26CDA6D25693CDB00BC7055 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26CDA8E25693CDB00BC7055 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				A26CDA6A25693CDB00BC7055 /* Sources */,
+				A26CDA6B25693CDB00BC7055 /* Frameworks */,
+				A26CDA6C25693CDB00BC7055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A26CDA7025693CDB00BC7055 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = A26CDA6E25693CDB00BC7055 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A26CDA7825693CDB00BC7055 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26CDA9125693CDB00BC7055 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				A26CDA7525693CDB00BC7055 /* Sources */,
+				A26CDA7625693CDB00BC7055 /* Frameworks */,
+				A26CDA7725693CDB00BC7055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A26CDA7B25693CDB00BC7055 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = A26CDA7925693CDB00BC7055 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A26CDA5225693CC400BC7055 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					A26CDA5D25693CDB00BC7055 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					A26CDA6525693CDB00BC7055 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					A26CDA6D25693CDB00BC7055 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A26CDA5D25693CDB00BC7055;
+					};
+					A26CDA7825693CDB00BC7055 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A26CDA6525693CDB00BC7055;
+					};
+				};
+			};
+			buildConfigurationList = A26CDA5525693CC500BC7055 /* Build configuration list for PBXProject "Vaporwave Music Player" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A26CDA5125693CC400BC7055;
+			packageReferences = (
+				A26CDAAA2569454E00BC7055 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				A2DD461E2569513D00CF2C50 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = A26CDA5F25693CDB00BC7055 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A26CDA5D25693CDB00BC7055 /* Vaporwave Music Player (iOS) */,
+				A26CDA6525693CDB00BC7055 /* Vaporwave Music Player (macOS) */,
+				A26CDA6D25693CDB00BC7055 /* Tests iOS */,
+				A26CDA7825693CDB00BC7055 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A26CDA5C25693CDB00BC7055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2AB5CD42572684400E30E5D /* a.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26CDA6425693CDB00BC7055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2AB5CD52572684400E30E5D /* a.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26CDA6C25693CDB00BC7055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2AB5CD62572684400E30E5D /* a.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26CDA7725693CDB00BC7055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2AB5CD72572684400E30E5D /* a.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A26CDA5A25693CDB00BC7055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2AB5CC72572661500E30E5D /* Sounds.swift in Sources */,
+				A26CDA8225693CDB00BC7055 /* ContentView.swift in Sources */,
+				A26CDA8025693CDB00BC7055 /* Vaporwave_Music_PlayerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26CDA6225693CDB00BC7055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2AB5CC82572661500E30E5D /* Sounds.swift in Sources */,
+				A26CDA8325693CDB00BC7055 /* ContentView.swift in Sources */,
+				A26CDA8125693CDB00BC7055 /* Vaporwave_Music_PlayerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26CDA6A25693CDB00BC7055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2AB5CC92572661500E30E5D /* Sounds.swift in Sources */,
+				A26CDA7325693CDB00BC7055 /* Tests_iOS.swift in Sources */,
+				A26CDAE225694ABD00BC7055 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26CDA7525693CDB00BC7055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2AB5CCA2572661500E30E5D /* Sounds.swift in Sources */,
+				A26CDA7E25693CDB00BC7055 /* Tests_macOS.swift in Sources */,
+				A26CDAE725694ABD00BC7055 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A26CDA7025693CDB00BC7055 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A26CDA5D25693CDB00BC7055 /* Vaporwave Music Player (iOS) */;
+			targetProxy = A26CDA6F25693CDB00BC7055 /* PBXContainerItemProxy */;
+		};
+		A26CDA7B25693CDB00BC7055 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A26CDA6525693CDB00BC7055 /* Vaporwave Music Player (macOS) */;
+			targetProxy = A26CDA7A25693CDB00BC7055 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A26CDA8625693CDB00BC7055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A26CDA8725693CDB00BC7055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A26CDA8925693CDB00BC7055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Vaporwave Music Player.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4R2T6H8CY7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vapormusic.vapormusic.Vaporwave-Music-Player";
+				PRODUCT_NAME = "Vaporwave Music Player";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		A26CDA8A25693CDB00BC7055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Vaporwave Music Player.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4R2T6H8CY7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vapormusic.vapormusic.Vaporwave-Music-Player";
+				PRODUCT_NAME = "Vaporwave Music Player";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A26CDA8C25693CDB00BC7055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4R2T6H8CY7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vapormusic.vapormusic.Vaporwave-Music-Player";
+				PRODUCT_NAME = "Vaporwave Music Player";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A26CDA8D25693CDB00BC7055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4R2T6H8CY7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vapormusic.vapormusic.Vaporwave-Music-Player";
+				PRODUCT_NAME = "Vaporwave Music Player";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A26CDA8F25693CDB00BC7055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vapormusic.vapormusic.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vaporwave Music Player (iOS)";
+			};
+			name = Debug;
+		};
+		A26CDA9025693CDB00BC7055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vapormusic.vapormusic.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vaporwave Music Player (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A26CDA9225693CDB00BC7055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vapormusic.vapormusic.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Vaporwave Music Player (macOS)";
+			};
+			name = Debug;
+		};
+		A26CDA9325693CDB00BC7055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vapormusic.vapormusic.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Vaporwave Music Player (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A26CDA5525693CC500BC7055 /* Build configuration list for PBXProject "Vaporwave Music Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26CDA8625693CDB00BC7055 /* Debug */,
+				A26CDA8725693CDB00BC7055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26CDA8825693CDB00BC7055 /* Build configuration list for PBXNativeTarget "Vaporwave Music Player (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26CDA8925693CDB00BC7055 /* Debug */,
+				A26CDA8A25693CDB00BC7055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26CDA8B25693CDB00BC7055 /* Build configuration list for PBXNativeTarget "Vaporwave Music Player (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26CDA8C25693CDB00BC7055 /* Debug */,
+				A26CDA8D25693CDB00BC7055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26CDA8E25693CDB00BC7055 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26CDA8F25693CDB00BC7055 /* Debug */,
+				A26CDA9025693CDB00BC7055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26CDA9125693CDB00BC7055 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26CDA9225693CDB00BC7055 /* Debug */,
+				A26CDA9325693CDB00BC7055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A26CDAAA2569454E00BC7055 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.5;
+			};
+		};
+		A2DD461E2569513D00CF2C50 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A23318712569565800C270FA /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2DD461E2569513D00CF2C50 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		A26CDAAB2569454E00BC7055 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A26CDAAA2569454E00BC7055 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		A26CDAAD2569454E00BC7055 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A26CDAAA2569454E00BC7055 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		A26CDAF225694BC900BC7055 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A26CDAAA2569454E00BC7055 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		A2DD461F2569513D00CF2C50 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2DD461E2569513D00CF2C50 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A26CDA5225693CC400BC7055 /* Project object */;
+}
