@@ -23,10 +23,6 @@
 		A2AB5CC82572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
 		A2AB5CC92572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
 		A2AB5CCA2572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
-		A2AB5CD42572684400E30E5D /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CD32572684400E30E5D /* a.wav */; };
-		A2AB5CD52572684400E30E5D /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CD32572684400E30E5D /* a.wav */; };
-		A2AB5CD62572684400E30E5D /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CD32572684400E30E5D /* a.wav */; };
-		A2AB5CD72572684400E30E5D /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CD32572684400E30E5D /* a.wav */; };
 		A2DD46202569513D00CF2C50 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A2DD461F2569513D00CF2C50 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +59,6 @@
 		A26CDA7F25693CDB00BC7055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26CDB1825694FA100BC7055 /* Vaporwave Music Player.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Vaporwave Music Player.entitlements"; sourceTree = "<group>"; };
 		A2AB5CC62572661500E30E5D /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
-		A2AB5CD32572684400E30E5D /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = a.wav; path = ../../../../Downloads/a.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +115,6 @@
 		A26CDA5625693CC800BC7055 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				A2AB5CD32572684400E30E5D /* a.wav */,
 				A26CDA5725693CC900BC7055 /* Vaporwave_Music_PlayerApp.swift */,
 				A26CDA5825693CC900BC7055 /* ContentView.swift */,
 				A2AB5CC62572661500E30E5D /* Sounds.swift */,
@@ -321,7 +315,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2AB5CD42572684400E30E5D /* a.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +322,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2AB5CD52572684400E30E5D /* a.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +329,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2AB5CD62572684400E30E5D /* a.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +336,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2AB5CD72572684400E30E5D /* a.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
