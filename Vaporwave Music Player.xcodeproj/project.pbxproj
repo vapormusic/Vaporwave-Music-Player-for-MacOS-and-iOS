@@ -19,10 +19,20 @@
 		A26CDAE225694ABD00BC7055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA5825693CC900BC7055 /* ContentView.swift */; };
 		A26CDAE725694ABD00BC7055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA5825693CC900BC7055 /* ContentView.swift */; };
 		A26CDAF325694BC900BC7055 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A26CDAF225694BC900BC7055 /* SDWebImage */; };
+		A286958725733D56003A4320 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A286958625733D56003A4320 /* Alamofire */; };
+		A286958D25733D75003A4320 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A286958C25733D75003A4320 /* Alamofire */; };
 		A2AB5CC72572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
 		A2AB5CC82572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
 		A2AB5CC92572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
 		A2AB5CCA2572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
+		A2AB5CE9257279B000E30E5D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CE8257279B000E30E5D /* Media.xcassets */; };
+		A2AB5CEA257279B000E30E5D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CE8257279B000E30E5D /* Media.xcassets */; };
+		A2AB5CEB257279B000E30E5D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CE8257279B000E30E5D /* Media.xcassets */; };
+		A2AB5CEC257279B000E30E5D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CE8257279B000E30E5D /* Media.xcassets */; };
+		A2AB5CF2257279BD00E30E5D /* frameworkmac.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CF1257279BD00E30E5D /* frameworkmac.png */; };
+		A2AB5CF3257279BD00E30E5D /* frameworkmac.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CF1257279BD00E30E5D /* frameworkmac.png */; };
+		A2AB5CF4257279BD00E30E5D /* frameworkmac.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CF1257279BD00E30E5D /* frameworkmac.png */; };
+		A2AB5CF5257279BD00E30E5D /* frameworkmac.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AB5CF1257279BD00E30E5D /* frameworkmac.png */; };
 		A2DD46202569513D00CF2C50 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A2DD461F2569513D00CF2C50 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +69,8 @@
 		A26CDA7F25693CDB00BC7055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26CDB1825694FA100BC7055 /* Vaporwave Music Player.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Vaporwave Music Player.entitlements"; sourceTree = "<group>"; };
 		A2AB5CC62572661500E30E5D /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		A2AB5CE8257279B000E30E5D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		A2AB5CF1257279BD00E30E5D /* frameworkmac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frameworkmac.png; path = ../../../../Downloads/frameworkmac.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A286958D25733D75003A4320 /* Alamofire in Frameworks */,
 				A23318722569565800C270FA /* SDWebImageSwiftUI in Frameworks */,
 				A26CDAF325694BC900BC7055 /* SDWebImage in Frameworks */,
 			);
@@ -76,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2DD46202569513D00CF2C50 /* SDWebImageSwiftUI in Frameworks */,
+				A286958725733D56003A4320 /* Alamofire in Frameworks */,
 				A26CDAAE2569454E00BC7055 /* SDWebImageMapKit in Frameworks */,
 				A26CDAAC2569454E00BC7055 /* SDWebImage in Frameworks */,
 			);
@@ -118,6 +132,8 @@
 				A26CDA5725693CC900BC7055 /* Vaporwave_Music_PlayerApp.swift */,
 				A26CDA5825693CC900BC7055 /* ContentView.swift */,
 				A2AB5CC62572661500E30E5D /* Sounds.swift */,
+				A2AB5CE8257279B000E30E5D /* Media.xcassets */,
+				A2AB5CF1257279BD00E30E5D /* frameworkmac.png */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -194,6 +210,7 @@
 			packageProductDependencies = (
 				A26CDAF225694BC900BC7055 /* SDWebImage */,
 				A23318712569565800C270FA /* SDWebImageSwiftUI */,
+				A286958C25733D75003A4320 /* Alamofire */,
 			);
 			productName = "Vaporwave Music Player (iOS)";
 			productReference = A26CDA5E25693CDB00BC7055 /* Vaporwave Music Player.app */;
@@ -216,6 +233,7 @@
 				A26CDAAB2569454E00BC7055 /* SDWebImage */,
 				A26CDAAD2569454E00BC7055 /* SDWebImageMapKit */,
 				A2DD461F2569513D00CF2C50 /* SDWebImageSwiftUI */,
+				A286958625733D56003A4320 /* Alamofire */,
 			);
 			productName = "Vaporwave Music Player (macOS)";
 			productReference = A26CDA6625693CDB00BC7055 /* Vaporwave Music Player.app */;
@@ -297,6 +315,7 @@
 			packageReferences = (
 				A26CDAAA2569454E00BC7055 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				A2DD461E2569513D00CF2C50 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				A286958525733D56003A4320 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = A26CDA5F25693CDB00BC7055 /* Products */;
 			projectDirPath = "";
@@ -315,6 +334,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AB5CF2257279BD00E30E5D /* frameworkmac.png in Resources */,
+				A2AB5CE9257279B000E30E5D /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +343,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AB5CF3257279BD00E30E5D /* frameworkmac.png in Resources */,
+				A2AB5CEA257279B000E30E5D /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +352,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AB5CF4257279BD00E30E5D /* frameworkmac.png in Resources */,
+				A2AB5CEB257279B000E30E5D /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +361,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AB5CF5257279BD00E30E5D /* frameworkmac.png in Resources */,
+				A2AB5CEC257279B000E30E5D /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,6 +783,14 @@
 				minimumVersion = 5.9.5;
 			};
 		};
+		A286958525733D56003A4320 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 		A2DD461E2569513D00CF2C50 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -786,6 +821,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A26CDAAA2569454E00BC7055 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		A286958625733D56003A4320 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A286958525733D56003A4320 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A286958C25733D75003A4320 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A286958525733D56003A4320 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 		A2DD461F2569513D00CF2C50 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
