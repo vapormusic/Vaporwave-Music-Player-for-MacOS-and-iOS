@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A23318722569565800C270FA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A23318712569565800C270FA /* SDWebImageSwiftUI */; };
+		A234D9CB2573DBAC00B99EA8 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A234D9CA2573DBAC00B99EA8 /* SwiftyJSON */; };
+		A26B30F52573A1900095EE1D /* CSNGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B30F42573A1900095EE1D /* CSNGetter.swift */; };
+		A26B30F62573A1900095EE1D /* CSNGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B30F42573A1900095EE1D /* CSNGetter.swift */; };
+		A26B30F72573A1900095EE1D /* CSNGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B30F42573A1900095EE1D /* CSNGetter.swift */; };
+		A26B30F82573A1900095EE1D /* CSNGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B30F42573A1900095EE1D /* CSNGetter.swift */; };
 		A26CDA7325693CDB00BC7055 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA7225693CDB00BC7055 /* Tests_iOS.swift */; };
 		A26CDA7E25693CDB00BC7055 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA7D25693CDB00BC7055 /* Tests_macOS.swift */; };
 		A26CDA8025693CDB00BC7055 /* Vaporwave_Music_PlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDA5725693CC900BC7055 /* Vaporwave_Music_PlayerApp.swift */; };
@@ -54,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A26B30F42573A1900095EE1D /* CSNGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSNGetter.swift; sourceTree = "<group>"; };
 		A26CDA5725693CC900BC7055 /* Vaporwave_Music_PlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaporwave_Music_PlayerApp.swift; sourceTree = "<group>"; };
 		A26CDA5825693CC900BC7055 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A26CDA5E25693CDB00BC7055 /* Vaporwave Music Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vaporwave Music Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +97,7 @@
 				A2DD46202569513D00CF2C50 /* SDWebImageSwiftUI in Frameworks */,
 				A286958725733D56003A4320 /* Alamofire in Frameworks */,
 				A26CDAAE2569454E00BC7055 /* SDWebImageMapKit in Frameworks */,
+				A234D9CB2573DBAC00B99EA8 /* SwiftyJSON in Frameworks */,
 				A26CDAAC2569454E00BC7055 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +141,7 @@
 				A2AB5CC62572661500E30E5D /* Sounds.swift */,
 				A2AB5CE8257279B000E30E5D /* Media.xcassets */,
 				A2AB5CF1257279BD00E30E5D /* frameworkmac.png */,
+				A26B30F42573A1900095EE1D /* CSNGetter.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 				A26CDAAD2569454E00BC7055 /* SDWebImageMapKit */,
 				A2DD461F2569513D00CF2C50 /* SDWebImageSwiftUI */,
 				A286958625733D56003A4320 /* Alamofire */,
+				A234D9CA2573DBAC00B99EA8 /* SwiftyJSON */,
 			);
 			productName = "Vaporwave Music Player (macOS)";
 			productReference = A26CDA6625693CDB00BC7055 /* Vaporwave Music Player.app */;
@@ -316,6 +325,7 @@
 				A26CDAAA2569454E00BC7055 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				A2DD461E2569513D00CF2C50 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				A286958525733D56003A4320 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A234D9C92573DBAC00B99EA8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = A26CDA5F25693CDB00BC7055 /* Products */;
 			projectDirPath = "";
@@ -374,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AB5CC72572661500E30E5D /* Sounds.swift in Sources */,
+				A26B30F52573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA8225693CDB00BC7055 /* ContentView.swift in Sources */,
 				A26CDA8025693CDB00BC7055 /* Vaporwave_Music_PlayerApp.swift in Sources */,
 			);
@@ -384,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AB5CC82572661500E30E5D /* Sounds.swift in Sources */,
+				A26B30F62573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA8325693CDB00BC7055 /* ContentView.swift in Sources */,
 				A26CDA8125693CDB00BC7055 /* Vaporwave_Music_PlayerApp.swift in Sources */,
 			);
@@ -394,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AB5CC92572661500E30E5D /* Sounds.swift in Sources */,
+				A26B30F72573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA7325693CDB00BC7055 /* Tests_iOS.swift in Sources */,
 				A26CDAE225694ABD00BC7055 /* ContentView.swift in Sources */,
 			);
@@ -404,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AB5CCA2572661500E30E5D /* Sounds.swift in Sources */,
+				A26B30F82573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA7E25693CDB00BC7055 /* Tests_macOS.swift in Sources */,
 				A26CDAE725694ABD00BC7055 /* ContentView.swift in Sources */,
 			);
@@ -477,6 +491,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -531,6 +546,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -775,6 +791,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A234D9C92573DBAC00B99EA8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		A26CDAAA2569454E00BC7055 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -806,6 +830,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A2DD461E2569513D00CF2C50 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		A234D9CA2573DBAC00B99EA8 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A234D9C92573DBAC00B99EA8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 		A26CDAAB2569454E00BC7055 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
