@@ -32,12 +32,12 @@ class CSNGetter{
         }
         
         struct SongDetailed: Decodable {
-        let music_album: String
-        let music_artist: String
-        let music_title: String
-        let music_id: String
-        let cover_image : String
-        let file_urls : [SongLinks]
+        let music_album: String?
+        let music_artist: String?
+        let music_title: String?
+        let music_id: String?
+        let cover_image : String?
+        let file_urls : [SongLinks]?
         }
         
         struct SongLinks : Decodable {
@@ -91,14 +91,15 @@ class CSNGetter{
                    // print(response)
                    do {
                        let   song = try JSONDecoder().decode(SongInfo.self, from: result!)
-                    print(song.data.music.file_urls[1].url )
+                    print(song.data.music.file_urls?[1].url ?? "" )
                     
-                     title = song.data.music.music_title
-                     album = song.data.music.music_album
-                     artist = song.data.music.music_artist
-                     id = song.data.music.music_id
-                    url = song.data.music.file_urls[1].url
-                     arturl = song.data.music.cover_image
+                     title = song.data.music.music_title ?? ""
+                    
+                        album = song.data.music.music_album ?? ""
+                     artist = song.data.music.music_artist ?? ""
+                     id = song.data.music.music_id ?? ""
+                    url = song.data.music.file_urls?[1].url ?? ""
+                     arturl = song.data.music.cover_image ?? ""
                     
                     completion(SongData(title: title, album: album, artist: artist, id: id, url: url, arturl: arturl))
                     

@@ -9,7 +9,7 @@ import Foundation
 
 public struct SongData : Codable {
     var title: String
-    var album: String
+    var album: String?
     var artist: String
     var id: String
     var url : String

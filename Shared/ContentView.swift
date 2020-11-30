@@ -19,6 +19,7 @@ struct ContentView: View {
     @State var artist: String?
     @State var songdata: SongData?
     @State var isPlaying : Bool = false
+    @State var sizemultipler : Double = 1.2
     var body: some View {
         ZStack {
             
@@ -33,19 +34,27 @@ struct ContentView: View {
                 // Note: Data exist only when queried from disk cache or network. Use `.queryMemoryData` if you really need data
             }
             .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
-            
+        
             .placeholder {
                 Rectangle().foregroundColor(.gray)
             }
-            .indicator(.activity) // Activity Indicator
+            .indicator(.activity)// Activity Indicator
+               
             .transition(.fade(duration: 0.5))// Fade Transition with duration
+            .scaledToFill()
+                .clipped()
+            
             
             ZStack(alignment: Alignment(horizontal: .leading, vertical: .top)){
-            Image("frameworkmac")
+   
+                WebImage(url: URL(string : "https://raw.githubusercontent.com/vapormusic/smalluploads/master/frameworkmac.png" ))
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 269 * CGFloat(self.sizemultipler), height: 380 * CGFloat(self.sizemultipler)).clipped()
                
                 VStack{
                     Spacer()
-                        .frame(height: 42.0)
+                        .frame(height: 42.0  * CGFloat(self.sizemultipler))
                     WebImage(url: URL(string: albumarturl ?? ""))
                     .resizable()
                   // .scaledToFit()
@@ -53,43 +62,43 @@ struct ContentView: View {
                     .placeholder {
                     Rectangle().foregroundColor(.gray)
                 }
-                   .padding(.top,44)
-                   .padding(.leading,5)
-                    .padding(.trailing,23)
+                   .padding(.top,44 * CGFloat(self.sizemultipler))
+                   .padding(.leading,5 * CGFloat(self.sizemultipler))
+                    .padding(.trailing,23 * CGFloat(self.sizemultipler))
                     .scaledToFill()
-                    .frame(width: 269, height: 155)
+                    .frame(width: 269 * CGFloat(self.sizemultipler), height: 155 * CGFloat(self.sizemultipler))
                     .clipped()
                     
                     Spacer()
-                        .frame(height: 10.0)
+                        .frame(height: 10.0 * CGFloat(self.sizemultipler))
                     Text(title ?? "Title")
-                        .font(Font.system(size: 15.5))
-                        .padding(.leading,10)
-                        .padding(.trailing,35)
+                        .font(Font.system(size: 15.5 ))
+                        .padding(.leading,10 * CGFloat(self.sizemultipler))
+                        .padding(.trailing,35 * CGFloat(self.sizemultipler))
                         .foregroundColor(.black)                        .lineLimit(1)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     Spacer()
-                        .frame(height: 3.0)
+                        .frame(height: 3.0 * CGFloat(self.sizemultipler))
                     Text(artist ?? "Artist")
-                        .font(Font.system(size: 12.0))
-                        .padding(.leading,10)
-                        .padding(.trailing,35)
+                        .font(Font.system(size: 12.0 ))
+                        .padding(.leading,10 * CGFloat(self.sizemultipler))
+                        .padding(.trailing,35 * CGFloat(self.sizemultipler))
                         .foregroundColor(.black)
                         .lineLimit(1)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
-            }.frame(width: 269, height: 380)
+            }.frame(width: 269 * CGFloat(self.sizemultipler), height: 380 * CGFloat(self.sizemultipler))
             
             VStack{
                 Spacer()
-                    .frame(height: 250.0)
+                    .frame(height: 250.0 * CGFloat(self.sizemultipler))
                 HStack()
                 {
                     Button(action: {}) {
-                        Text("").frame(width: 75.0, height: 32.0).padding(0)}.frame(width: 75.0, height: 32.0) .buttonStyle(BorderlessButtonStyle())
+                        Text("").frame(width: 75.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler)).padding(0)}.frame(width: 75.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler)) .buttonStyle(BorderlessButtonStyle())
                     Button(action: {
-                        CSNGetter.getSongUrl(query: "like you do"){ result in
+                        CSNGetter.getSongUrl(query: "upgrade joji"){ result in
                             
                             print(result)
                         print("f")
@@ -99,28 +108,25 @@ struct ContentView: View {
                             Sounds.playHttpSounds(soundfile: result.url)
                             
                         }
-               //  Sounds.playSounds(soundfile: "a.wav")
-                    
-//                        Sounds.playHttpSounds(soundfile: "https://data35.chiasenhac.com/downloads/1954/0/1953381-6ce0e25f/128/Slow%20Dancing%20In%20The%20Dark%20-%20Joji.mp3")
                         
                         
                     }) {
-                       Text("").frame(width: 95.0, height: 32.0).padding(0)
+                       Text("").frame(width: 95.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler)).padding(0)
                     }
                     .background(Color.clear)
                     .buttonStyle(BorderlessButtonStyle())
-                    .frame(width: 95.0, height: 32.0)
+                    .frame(width: 95.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler))
                     Button(action: {}) {
-                        Text("").frame(width: 95.0, height: 32.0).padding(0)
+                        Text("").frame(width: 95.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler)).padding(0)
                         
                     }
-                    .frame(width: 95.0, height: 32.0)
+                    .frame(width: 95.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler))
                     .buttonStyle(BorderlessButtonStyle())
                     
-                }.frame(width: 269.0, height: 32.0)
+                }.frame(width: 269.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler))
     
 
-            }.frame(width: 269, height: 380)
+            }.frame(width: 269 * CGFloat(self.sizemultipler), height: 380 * CGFloat(self.sizemultipler))
         }
  
       
