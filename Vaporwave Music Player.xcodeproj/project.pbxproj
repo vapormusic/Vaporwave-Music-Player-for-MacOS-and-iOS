@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A23318722569565800C270FA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A23318712569565800C270FA /* SDWebImageSwiftUI */; };
 		A234D9CB2573DBAC00B99EA8 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A234D9CA2573DBAC00B99EA8 /* SwiftyJSON */; };
+		A234D9DE2573E36200B99EA8 /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A234D9DD2573E36200B99EA8 /* SongData.swift */; };
+		A234D9DF2573E36200B99EA8 /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A234D9DD2573E36200B99EA8 /* SongData.swift */; };
+		A234D9E02573E36200B99EA8 /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A234D9DD2573E36200B99EA8 /* SongData.swift */; };
+		A234D9E12573E36200B99EA8 /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A234D9DD2573E36200B99EA8 /* SongData.swift */; };
 		A26B30F52573A1900095EE1D /* CSNGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B30F42573A1900095EE1D /* CSNGetter.swift */; };
 		A26B30F62573A1900095EE1D /* CSNGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B30F42573A1900095EE1D /* CSNGetter.swift */; };
 		A26B30F72573A1900095EE1D /* CSNGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B30F42573A1900095EE1D /* CSNGetter.swift */; };
@@ -59,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A234D9DD2573E36200B99EA8 /* SongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongData.swift; sourceTree = "<group>"; };
 		A26B30F42573A1900095EE1D /* CSNGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSNGetter.swift; sourceTree = "<group>"; };
 		A26CDA5725693CC900BC7055 /* Vaporwave_Music_PlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaporwave_Music_PlayerApp.swift; sourceTree = "<group>"; };
 		A26CDA5825693CC900BC7055 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +147,7 @@
 				A2AB5CE8257279B000E30E5D /* Media.xcassets */,
 				A2AB5CF1257279BD00E30E5D /* frameworkmac.png */,
 				A26B30F42573A1900095EE1D /* CSNGetter.swift */,
+				A234D9DD2573E36200B99EA8 /* SongData.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -386,6 +392,7 @@
 				A2AB5CC72572661500E30E5D /* Sounds.swift in Sources */,
 				A26B30F52573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA8225693CDB00BC7055 /* ContentView.swift in Sources */,
+				A234D9DE2573E36200B99EA8 /* SongData.swift in Sources */,
 				A26CDA8025693CDB00BC7055 /* Vaporwave_Music_PlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +404,7 @@
 				A2AB5CC82572661500E30E5D /* Sounds.swift in Sources */,
 				A26B30F62573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA8325693CDB00BC7055 /* ContentView.swift in Sources */,
+				A234D9DF2573E36200B99EA8 /* SongData.swift in Sources */,
 				A26CDA8125693CDB00BC7055 /* Vaporwave_Music_PlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +416,7 @@
 				A2AB5CC92572661500E30E5D /* Sounds.swift in Sources */,
 				A26B30F72573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA7325693CDB00BC7055 /* Tests_iOS.swift in Sources */,
+				A234D9E02573E36200B99EA8 /* SongData.swift in Sources */,
 				A26CDAE225694ABD00BC7055 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +428,7 @@
 				A2AB5CCA2572661500E30E5D /* Sounds.swift in Sources */,
 				A26B30F82573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA7E25693CDB00BC7055 /* Tests_macOS.swift in Sources */,
+				A234D9E12573E36200B99EA8 /* SongData.swift in Sources */,
 				A26CDAE725694ABD00BC7055 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

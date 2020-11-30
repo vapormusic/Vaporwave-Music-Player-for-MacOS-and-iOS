@@ -17,8 +17,8 @@ struct ContentView: View {
     @State var albumarturl: String?
     @State var title: String?
     @State var artist: String?
-    
-     @State var isPlaying : Bool = false
+    @State var songdata: SongData?
+    @State var isPlaying : Bool = false
     var body: some View {
         ZStack {
             
@@ -63,9 +63,10 @@ struct ContentView: View {
                     Spacer()
                         .frame(height: 10.0)
                     Text(title ?? "Title")
-                        .font(Font.system(size: 15.5))                  .padding(.leading,10)
+                        .font(Font.system(size: 15.5))
+                        .padding(.leading,10)
                         .padding(.trailing,35)
-                        .lineLimit(1)
+                        .foregroundColor(.black)                        .lineLimit(1)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     Spacer()
@@ -74,6 +75,7 @@ struct ContentView: View {
                         .font(Font.system(size: 12.0))
                         .padding(.leading,10)
                         .padding(.trailing,35)
+                        .foregroundColor(.black)
                         .lineLimit(1)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
@@ -87,11 +89,20 @@ struct ContentView: View {
                     Button(action: {}) {
                         Text("").frame(width: 75.0, height: 32.0).padding(0)}.frame(width: 75.0, height: 32.0) .buttonStyle(BorderlessButtonStyle())
                     Button(action: {
-                        
-                self.albumarturl = "https://images.genius.com/79c6343980b4513f2c46813301da0dec.300x300x1.png"
+                        CSNGetter.getSongUrl(query: "like you do"){ result in
+                            
+                            print(result)
+                        print("f")
+                        self.albumarturl = result.arturl
+                        self.artist = result.artist
+                            self.title = result.title
+                            Sounds.playHttpSounds(soundfile: result.url)
+                            
+                        }
                //  Sounds.playSounds(soundfile: "a.wav")
-                Sounds.playHttpSounds(soundfile: "https://data35.chiasenhac.com/downloads/1954/0/1953381-6ce0e25f/128/Slow%20Dancing%20In%20The%20Dark%20-%20Joji.mp3")
-                        CSNGetter.getSongUrl(query: "ew")
+                    
+//                        Sounds.playHttpSounds(soundfile: "https://data35.chiasenhac.com/downloads/1954/0/1953381-6ce0e25f/128/Slow%20Dancing%20In%20The%20Dark%20-%20Joji.mp3")
+                        
                         
                     }) {
                        Text("").frame(width: 95.0, height: 32.0).padding(0)
