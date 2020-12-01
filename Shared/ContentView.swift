@@ -11,6 +11,7 @@ import SDWebImageSwiftUI
 import AVFoundation
 
 
+
 struct ContentView: View {
       
     @State var audioPlayer:AVPlayer?
@@ -19,11 +20,12 @@ struct ContentView: View {
     @State var artist: String?
     @State var songdata: SongData?
     @State var isPlaying : Bool = false
+    @State var searchquery : String = "upgrade joji"
     @State var sizemultipler : Double = 1.2
+
     var body: some View {
         ZStack {
             
-          
             
             AnimatedImage(url: URL(string: "https://i.pinimg.com/originals/16/69/e5/1669e57761ccc67fa5e31a09a54764d0.gif"))
             
@@ -42,7 +44,8 @@ struct ContentView: View {
                
             .transition(.fade(duration: 0.5))// Fade Transition with duration
             .scaledToFill()
-                .clipped()
+                
+            
             
             
             ZStack(alignment: Alignment(horizontal: .leading, vertical: .top)){
@@ -127,6 +130,47 @@ struct ContentView: View {
     
 
             }.frame(width: 269 * CGFloat(self.sizemultipler), height: 380 * CGFloat(self.sizemultipler))
+            
+            ZStack(alignment: Alignment(horizontal: .leading, vertical: .top)){
+                WebImage(url: URL(string : "https://raw.githubusercontent.com/vapormusic/smalluploads/master/frameworkmac.png" ))
+                    
+                    
+                    
+                    
+                    
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 269 * CGFloat(self.sizemultipler), height: 380 * CGFloat(self.sizemultipler)).clipped()
+                VStack(){
+                Spacer()
+                    .frame(height: 48.0)
+                    ZStack{
+                    Rectangle()
+                        .fill(Color.white)
+                        VStack{
+                            TextField("upgrade joji", text: self.$searchquery)
+                            Spacer()
+                                .frame(height: 20.0)
+                           SongList()
+                        }.frame(height: 379)
+                        
+                        
+                        
+                    } .padding(.leading,5 * CGFloat(self.sizemultipler))
+                        .padding(.trailing,23 * CGFloat(self.sizemultipler))
+                        .padding(.bottom,24.5 * CGFloat(self.sizemultipler))
+                    
+                }
+                
+                
+                
+                
+            }.frame(width: 269 * CGFloat(self.sizemultipler), height: 380 * CGFloat(self.sizemultipler))
+            
+            
+            
+            
+            
         }
  
       
@@ -136,8 +180,8 @@ struct ContentView: View {
     
 }
 
-func video() {
-   }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

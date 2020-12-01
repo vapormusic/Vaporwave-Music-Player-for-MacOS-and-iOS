@@ -30,6 +30,18 @@
 		A26CDAF325694BC900BC7055 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A26CDAF225694BC900BC7055 /* SDWebImage */; };
 		A286958725733D56003A4320 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A286958625733D56003A4320 /* Alamofire */; };
 		A286958D25733D75003A4320 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A286958C25733D75003A4320 /* Alamofire */; };
+		A28702592575E8CB00D88724 /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28702582575E8CB00D88724 /* SongRow.swift */; };
+		A287025A2575E8CB00D88724 /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28702582575E8CB00D88724 /* SongRow.swift */; };
+		A287025B2575E8CB00D88724 /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28702582575E8CB00D88724 /* SongRow.swift */; };
+		A287025C2575E8CB00D88724 /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28702582575E8CB00D88724 /* SongRow.swift */; };
+		A28702622575EA0A00D88724 /* MList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28702612575EA0A00D88724 /* MList.swift */; };
+		A28702632575EA0A00D88724 /* MList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28702612575EA0A00D88724 /* MList.swift */; };
+		A28702642575EA0A00D88724 /* MList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28702612575EA0A00D88724 /* MList.swift */; };
+		A28702652575EA0A00D88724 /* MList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28702612575EA0A00D88724 /* MList.swift */; };
+		A297BE26257606FC0033BD91 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A297BE25257606FC0033BD91 /* SongList.swift */; };
+		A297BE27257606FC0033BD91 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A297BE25257606FC0033BD91 /* SongList.swift */; };
+		A297BE28257606FC0033BD91 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A297BE25257606FC0033BD91 /* SongList.swift */; };
+		A297BE29257606FC0033BD91 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A297BE25257606FC0033BD91 /* SongList.swift */; };
 		A2AB5CC72572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
 		A2AB5CC82572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
 		A2AB5CC92572661500E30E5D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB5CC62572661500E30E5D /* Sounds.swift */; };
@@ -79,6 +91,9 @@
 		A26CDA7D25693CDB00BC7055 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		A26CDA7F25693CDB00BC7055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26CDB1825694FA100BC7055 /* Vaporwave Music Player.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Vaporwave Music Player.entitlements"; sourceTree = "<group>"; };
+		A28702582575E8CB00D88724 /* SongRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
+		A28702612575EA0A00D88724 /* MList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MList.swift; sourceTree = "<group>"; };
+		A297BE25257606FC0033BD91 /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		A2AB5CC62572661500E30E5D /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		A2AB5CE8257279B000E30E5D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A2AB5CF1257279BD00E30E5D /* frameworkmac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frameworkmac.png; path = ../../../../Downloads/frameworkmac.png; sourceTree = "<group>"; };
@@ -148,6 +163,9 @@
 				A2AB5CF1257279BD00E30E5D /* frameworkmac.png */,
 				A26B30F42573A1900095EE1D /* CSNGetter.swift */,
 				A234D9DD2573E36200B99EA8 /* SongData.swift */,
+				A28702582575E8CB00D88724 /* SongRow.swift */,
+				A28702612575EA0A00D88724 /* MList.swift */,
+				A297BE25257606FC0033BD91 /* SongList.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -390,8 +408,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AB5CC72572661500E30E5D /* Sounds.swift in Sources */,
+				A28702592575E8CB00D88724 /* SongRow.swift in Sources */,
 				A26B30F52573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA8225693CDB00BC7055 /* ContentView.swift in Sources */,
+				A297BE26257606FC0033BD91 /* SongList.swift in Sources */,
+				A28702622575EA0A00D88724 /* MList.swift in Sources */,
 				A234D9DE2573E36200B99EA8 /* SongData.swift in Sources */,
 				A26CDA8025693CDB00BC7055 /* Vaporwave_Music_PlayerApp.swift in Sources */,
 			);
@@ -402,8 +423,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AB5CC82572661500E30E5D /* Sounds.swift in Sources */,
+				A287025A2575E8CB00D88724 /* SongRow.swift in Sources */,
 				A26B30F62573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA8325693CDB00BC7055 /* ContentView.swift in Sources */,
+				A297BE27257606FC0033BD91 /* SongList.swift in Sources */,
+				A28702632575EA0A00D88724 /* MList.swift in Sources */,
 				A234D9DF2573E36200B99EA8 /* SongData.swift in Sources */,
 				A26CDA8125693CDB00BC7055 /* Vaporwave_Music_PlayerApp.swift in Sources */,
 			);
@@ -414,8 +438,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AB5CC92572661500E30E5D /* Sounds.swift in Sources */,
+				A287025B2575E8CB00D88724 /* SongRow.swift in Sources */,
 				A26B30F72573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA7325693CDB00BC7055 /* Tests_iOS.swift in Sources */,
+				A297BE28257606FC0033BD91 /* SongList.swift in Sources */,
+				A28702642575EA0A00D88724 /* MList.swift in Sources */,
 				A234D9E02573E36200B99EA8 /* SongData.swift in Sources */,
 				A26CDAE225694ABD00BC7055 /* ContentView.swift in Sources */,
 			);
@@ -426,8 +453,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AB5CCA2572661500E30E5D /* Sounds.swift in Sources */,
+				A287025C2575E8CB00D88724 /* SongRow.swift in Sources */,
 				A26B30F82573A1900095EE1D /* CSNGetter.swift in Sources */,
 				A26CDA7E25693CDB00BC7055 /* Tests_macOS.swift in Sources */,
+				A297BE29257606FC0033BD91 /* SongList.swift in Sources */,
+				A28702652575EA0A00D88724 /* MList.swift in Sources */,
 				A234D9E12573E36200B99EA8 /* SongData.swift in Sources */,
 				A26CDAE725694ABD00BC7055 /* ContentView.swift in Sources */,
 			);
