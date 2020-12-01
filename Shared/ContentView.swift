@@ -150,7 +150,11 @@ struct ContentView: View {
                     Rectangle()
                         .fill(Color.white)
                         VStack{
-                            TextField("upgrade joji", text: self.$searchquery)
+                            TextField("upgrade joji", text: self.$searchquery, onCommit: {print(self.searchquery)
+                                        CSNGetter.getSearchList(query: self.searchquery){result in
+                                            self.mlistclass = MListClass.init(MList: result)
+                                            print(self.mlistclass.MList.music_list[1])
+                                            self.mlistclass.objectWillChange.send()}})
                             Spacer()
                                 .frame(height: 20.0)
                             
@@ -163,7 +167,7 @@ struct ContentView: View {
                             
                         }.frame(height: 379).onAppear{
                             
-                            CSNGetter.getSearchList(query: "ew "){result in
+                            CSNGetter.getSearchList(query: self.searchquery){result in
                                 self.mlistclass = MListClass.init(MList: result)
                                 print(self.mlistclass.MList.music_list[1])
                                 self.mlistclass.objectWillChange.send()
