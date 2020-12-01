@@ -8,8 +8,6 @@
 import Foundation
 
 struct MList : Decodable {
-
-    
     let music_list : [Song]
     
     struct Song: Decodable{
@@ -31,4 +29,19 @@ extension MList: Identifiable {
 
 extension MList.Song : Identifiable {
     var id2 : Int { return 2 }
+}
+
+class MListClass : ObservableObject{
+   @Published var MList : MList 
+    
+    init(MList : MList) {
+        self.MList = MList
+        
+    }
+    
+    func getMList() -> MList {
+         
+         return MList
+     }
+    
 }

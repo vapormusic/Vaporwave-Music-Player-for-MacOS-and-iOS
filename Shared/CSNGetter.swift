@@ -135,8 +135,9 @@ class CSNGetter{
             let result = response.data
             
             do {
-                print(response)
+                
                 let   songs = try JSONDecoder().decode(MList.self, from: result!)
+                print(songs.music_list[0].music_title)
                 completion(songs)
                 
             }

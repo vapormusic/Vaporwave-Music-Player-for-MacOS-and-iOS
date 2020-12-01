@@ -22,7 +22,9 @@ struct ContentView: View {
     @State var isPlaying : Bool = false
     @State var searchquery : String = "upgrade joji"
     @State var sizemultipler : Double = 1.2
-
+    @State var mlist2 = MList(music_list: [])
+    @State var mlistclass : MListClass = MListClass.init(MList: MList(music_list: []))
+    @State var SearchList : SongList?
     var body: some View {
         ZStack {
             
@@ -151,8 +153,24 @@ struct ContentView: View {
                             TextField("upgrade joji", text: self.$searchquery)
                             Spacer()
                                 .frame(height: 20.0)
-                           SongList()
-                        }.frame(height: 379)
+                            
+                            
+//                            let x = MList.Song(music_album: "Nectar", music_artist: "Joji", music_title: "Upgrade", music_id: "1", cover_img: "https://images.genius.com/79c6343980b4513f2c46813301da0dec.300x300x1.png", id: 1)
+//                            let y = MList.Song(music_album: "Nectar", music_artist: "Joji", music_title: "Ew", music_id: "1", cover_img: "https://images.genius.com/79c6343980b4513f2c46813301da0dec.300x300x1.png", id:  2)
+//
+                           
+                            SongList(userData: self.mlistclass)
+                            
+                        }.frame(height: 379).onAppear{
+                            
+                            CSNGetter.getSearchList(query: "ew "){result in
+                                self.mlistclass = MListClass.init(MList: result)
+                                print(self.mlistclass.MList.music_list[1])
+                                self.mlistclass.objectWillChange.send()
+                                
+                                                          }
+                            
+                        }
                         
                         
                         
