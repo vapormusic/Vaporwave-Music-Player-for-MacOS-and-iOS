@@ -148,7 +148,7 @@ class CSNGetter{
            let result = response.data
            // print(response)
            do {
-               let   song = try JSONDecoder().decode(SongInfo.self, from: result!)
+            let   song = try JSONDecoder().decode(SongInfo.self, from: result!)
             print(song.data.music.file_urls?[1].url ?? "" )
             
              title = song.data.music.music_title ?? ""

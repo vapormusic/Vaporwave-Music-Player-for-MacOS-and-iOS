@@ -171,18 +171,13 @@
 		A26CDA5625693CC800BC7055 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A2F07D0A257919AF0026F69B /* Models */,
 				A26CDA5725693CC900BC7055 /* Vaporwave_Music_PlayerApp.swift */,
 				A26CDA5825693CC900BC7055 /* ContentView.swift */,
 				A2AB5CC62572661500E30E5D /* Sounds.swift */,
 				A2AB5CE8257279B000E30E5D /* Media.xcassets */,
 				A2AB5CF1257279BD00E30E5D /* frameworkmac.png */,
 				A26B30F42573A1900095EE1D /* CSNGetter.swift */,
-				A234D9DD2573E36200B99EA8 /* SongData.swift */,
-				A28702582575E8CB00D88724 /* SongRow.swift */,
-				A2A4BABC2578D82E00BC22B0 /* SongDataPrefKey.swift */,
-				A28702612575EA0A00D88724 /* MList.swift */,
-				A297BE25257606FC0033BD91 /* SongList.swift */,
-				A2A4BAB32578CC2200BC22B0 /* SongInfo.swift */,
 				A2A4BAC52578DFA800BC22B0 /* InfoSender.swift */,
 			);
 			path = Shared;
@@ -239,6 +234,19 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2F07D0A257919AF0026F69B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A234D9DD2573E36200B99EA8 /* SongData.swift */,
+				A28702582575E8CB00D88724 /* SongRow.swift */,
+				A2A4BABC2578D82E00BC22B0 /* SongDataPrefKey.swift */,
+				A28702612575EA0A00D88724 /* MList.swift */,
+				A297BE25257606FC0033BD91 /* SongList.swift */,
+				A2A4BAB32578CC2200BC22B0 /* SongInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

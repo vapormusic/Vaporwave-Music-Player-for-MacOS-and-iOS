@@ -44,7 +44,7 @@ struct SongRow: View {
         }.background(Color.white)
             Button(action: {
                 CSNGetter.getSongInfo(music_id: landmark.music_id){  result in
-                    hello(link : result.url)
+                    hello(link : result.url, songdata : result)
                     self.songdata = result
                     NotificationCenter.default.post(name: Notification.check, object: nil, userInfo: ["arturl": result.arturl, "artist": result.artist, "title" : result.title]
                     )

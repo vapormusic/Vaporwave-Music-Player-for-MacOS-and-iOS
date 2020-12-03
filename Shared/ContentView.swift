@@ -112,7 +112,7 @@ struct ContentView: View {
                         self.albumarturl = result.arturl
                         self.artist = result.artist
                             self.title = result.title
-                            Sounds.playHttpSounds(soundfile: result.url)
+                            Sounds.playHttpSounds(soundfile: result.url, songdata: result)
                             
                         }
                         
@@ -211,7 +211,8 @@ struct ContentView: View {
             }.frame(width: 269 * CGFloat(self.sizemultipler), height: 380 * CGFloat(self.sizemultipler))
             .onReceive(NotificationCenter.default.publisher(for: Notification.check))
             { obj in
-               // Change key as per your "userInfo"
+                
+                // Change key as per your "userInfo"
                 if let userInfo = obj.userInfo {
                     self.searchviewhide = true
                     self.artist = userInfo["artist"] as? String
@@ -238,8 +239,8 @@ struct ContentView: View {
     
 }
 
-public func hello(link: String) {
-    Sounds.playHttpSounds(soundfile: link)
+public func hello(link: String, songdata : SongData) {
+    Sounds.playHttpSounds(soundfile: link,songdata: songdata)
 }
 
 struct ContentView_Previews: PreviewProvider {

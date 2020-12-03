@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 @main
 struct Vaporwave_Music_PlayerApp: App {
     var body: some Scene {
@@ -17,3 +16,5 @@ struct Vaporwave_Music_PlayerApp: App {
         }
     }
 }
+
+
