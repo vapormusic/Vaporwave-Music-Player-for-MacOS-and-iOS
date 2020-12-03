@@ -11,9 +11,11 @@ import SDWebImage
 import SDWebImageSwiftUI
 
 struct SongRow: View {
+    @State var songdata : SongData = SongData(title: "Ew", album: "Nectar", artist: "Joji",  id: "2", url:  "http://lol" , arturl : "https://images.genius.com/79c6343980b4513f2c46813301da0dec.300x300x1.png")
     var landmark: MList.Song
 
     var body: some View {
+        ZStack{
         HStack(alignment: .center) {
             
             WebImage(url : URL(string: landmark.cover_img))
@@ -28,17 +30,33 @@ struct SongRow: View {
                     .fontWeight(.bold)
                     .truncationMode(.tail)
                     .frame(minWidth: 20)
-
+                    .foregroundColor(.black)
                 Text(landmark.music_artist)
                     .font(.caption)
                     .opacity(0.625)
                     .truncationMode(.middle)
+                    .foregroundColor(.black)
             }
 
             Spacer()
 
     
+        }.background(Color.white)
+            Button(action: {
+                CSNGetter.getSongInfo(music_id: landmark.music_id){  result in
+                    hello(link : result.url)
+                    self.songdata = result
+                    NotificationCenter.default.post(name: Notification.check, object: nil, userInfo: ["arturl": result.arturl, "artist": result.artist, "title" : result.title]
+                    )
+                    
+                }
+            }) {
+                Rectangle().fill(Color.clear).frame(width: 600, height: 32)
+                
+            }.buttonStyle(BorderlessButtonStyle()).background(Color.clear).frame(width: 600, height: 32)
+            
         }
+      
     }
 }
 

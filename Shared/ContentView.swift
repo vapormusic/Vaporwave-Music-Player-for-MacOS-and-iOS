@@ -25,6 +25,8 @@ struct ContentView: View {
     @State var mlist2 = MList(music_list: [])
     @State var mlistclass : MListClass = MListClass.init(MList: MList(music_list: []))
     @State var SearchList : SongList?
+    @ObservedObject var songdataclass : SongDataClass
+    @State var searchviewhide : Bool = false
     var body: some View {
         ZStack {
             
@@ -97,7 +99,7 @@ struct ContentView: View {
             
             VStack{
                 Spacer()
-                    .frame(height: 250.0 * CGFloat(self.sizemultipler))
+                    .frame(height: 280.0 * CGFloat(self.sizemultipler))
                 HStack()
                 {
                     Button(action: {}) {
@@ -129,8 +131,27 @@ struct ContentView: View {
                     .buttonStyle(BorderlessButtonStyle())
                     
                 }.frame(width: 269.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler))
-    
-
+                HStack{
+                    Button(action: {}) {
+                        Text("").frame(width:130.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler)).padding(0)
+                        
+                    }
+                    .frame(width: 130.5 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler))
+                    
+                    .buttonStyle(BorderlessButtonStyle())
+                    
+                    Button(action: {
+                        self.searchviewhide = false
+                    }) {
+                        Text("mode").frame(width: 120.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler)).padding(0)
+                        
+                    }
+                    .frame(width: 134.5 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler))
+                    
+                   .buttonStyle(BorderlessButtonStyle())
+                    
+                }.frame(width: 269.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler))
+                
             }.frame(width: 269 * CGFloat(self.sizemultipler), height: 380 * CGFloat(self.sizemultipler))
             
             ZStack(alignment: Alignment(horizontal: .leading, vertical: .top)){
@@ -154,7 +175,7 @@ struct ContentView: View {
                                         CSNGetter.getSearchList(query: self.searchquery){result in
                                             self.mlistclass = MListClass.init(MList: result)
                                             print(self.mlistclass.MList.music_list[1])
-                                            self.mlistclass.objectWillChange.send()}})
+                                            self.mlistclass.objectWillChange.send()}}).foregroundColor(.black)
                             Spacer()
                                 .frame(height: 20.0)
                             
@@ -188,6 +209,20 @@ struct ContentView: View {
                 
                 
             }.frame(width: 269 * CGFloat(self.sizemultipler), height: 380 * CGFloat(self.sizemultipler))
+            .onReceive(NotificationCenter.default.publisher(for: Notification.check))
+            { obj in
+               // Change key as per your "userInfo"
+                if let userInfo = obj.userInfo {
+                    self.searchviewhide = true
+                    self.artist = userInfo["artist"] as? String
+                    self.albumarturl = userInfo["arturl"] as? String
+                    self.title = userInfo["title"] as? String
+                    print(self.artist)
+                    print("ok")
+                }
+            }
+            .hidden(self.searchviewhide)
+            
             
             
             
@@ -198,16 +233,18 @@ struct ContentView: View {
       
         
     }
-    
+   
+ 
     
 }
 
-
-
+public func hello(link: String) {
+    Sounds.playHttpSounds(soundfile: link)
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(songdataclass: SongDataClass.init(SongData: SongData(title: "Ew", album: "Nectar", artist: "Joji",  id: "2", url:  "http://lol" , arturl : "https://images.genius.com/79c6343980b4513f2c46813301da0dec.300x300x1.png")))
         
     }
     
