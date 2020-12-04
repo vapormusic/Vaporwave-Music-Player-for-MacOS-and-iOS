@@ -31,7 +31,8 @@ struct ContentView: View {
         ZStack {
             
             
-            AnimatedImage(url: URL(string: "https://i.pinimg.com/originals/16/69/e5/1669e57761ccc67fa5e31a09a54764d0.gif"))
+            
+            AnimatedImage(url: URL(string: "https://i.imgur.com/eTm7oez.gif"))
             
             
             // Supports options and context, like `.delayPlaceholder` to show placeholder only when error
@@ -47,8 +48,10 @@ struct ContentView: View {
             .indicator(.activity)// Activity Indicator
                
             .transition(.fade(duration: 0.5))// Fade Transition with duration
+               
             .scaledToFill()
-                
+                .clipped()
+                  //  .frame(width: 1024, height: 535 )
             
             
             
@@ -105,19 +108,27 @@ struct ContentView: View {
                     Button(action: {}) {
                         Text("").frame(width: 75.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler)).padding(0)}.frame(width: 75.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler)) .buttonStyle(BorderlessButtonStyle())
                     Button(action: {
-                        CSNGetter.getSongUrl(query: "upgrade joji"){ result in
+                        
+
+                        if (Sounds.isLoaded()){
+                                if (Sounds.isPlaying()){
+                                    Sounds.pause()
+                                } else {Sounds.play()}
+                        } else{
+                                                    CSNGetter.getSongUrl(query: "all i want for christmas"){ result in
                             
-                            print(result)
-                        print("f")
-                        self.albumarturl = result.arturl
-                        self.artist = result.artist
-                            self.title = result.title
-                            Sounds.playHttpSounds(soundfile: result.url, songdata: result)
+                                                        print(result)
+                                                    print("f")
+                                                    self.albumarturl = result.arturl
+                                                    self.artist = result.artist
+                                                        self.title = result.title
+                                                        Sounds.playHttpSounds(soundfile: result.url, songdata: result)
                             
+                                                    }
                         }
-                        
-                        
-                    }) {
+                    }
+                    
+                    ) {
                        Text("").frame(width: 95.0 * CGFloat(self.sizemultipler), height: 32.0 * CGFloat(self.sizemultipler)).padding(0)
                     }
                     .background(Color.clear)
@@ -165,13 +176,22 @@ struct ContentView: View {
                     .scaledToFill()
                     .frame(width: 269 * CGFloat(self.sizemultipler), height: 380 * CGFloat(self.sizemultipler)).clipped()
                 VStack(){
-                Spacer()
-                    .frame(height: 48.0)
+                    Button(action: {
+                        self.searchviewhide = true
+                    }) {
+                        Text("").frame(width: 322 , height: 24.0 )
+                        
+                    }
+                    .frame(width: 322, height: 24 )
+                    
+                   .buttonStyle(BorderlessButtonStyle())
+                    Spacer()
+                    .frame(width: 10.0, height: 24.0)
                     ZStack{
                     Rectangle()
                         .fill(Color.white)
                         VStack{
-                            TextField("upgrade joji", text: self.$searchquery, onCommit: {print(self.searchquery)
+                            TextField("all i want for christmas", text: self.$searchquery, onCommit: {print(self.searchquery)
                                         CSNGetter.getSearchList(query: self.searchquery){result in
                                             self.mlistclass = MListClass.init(MList: result)
                                             print(self.mlistclass.MList.music_list[1])

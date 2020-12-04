@@ -31,17 +31,20 @@ struct SongRow: View {
                     .truncationMode(.tail)
                     .frame(minWidth: 20)
                     .foregroundColor(.black)
+                    .lineLimit(1)
                 Text(landmark.music_artist)
                     .font(.caption)
                     .opacity(0.625)
                     .truncationMode(.middle)
                     .foregroundColor(.black)
+                    .lineLimit(1)
             }
 
             Spacer()
 
     
-        }.background(Color.white)
+        }.background(Color.white).frame(width: 250, height: 32)
+            
             Button(action: {
                 CSNGetter.getSongInfo(music_id: landmark.music_id){  result in
                     hello(link : result.url, songdata : result)
@@ -51,9 +54,9 @@ struct SongRow: View {
                     
                 }
             }) {
-                Rectangle().fill(Color.clear).frame(width: 600, height: 32)
+                Rectangle().fill(Color.clear).frame(width: 260, height: 32)
                 
-            }.buttonStyle(BorderlessButtonStyle()).background(Color.clear).frame(width: 600, height: 32)
+            }.buttonStyle(BorderlessButtonStyle()).background(Color.clear).frame(width: 260, height: 32)
             
         }
       
