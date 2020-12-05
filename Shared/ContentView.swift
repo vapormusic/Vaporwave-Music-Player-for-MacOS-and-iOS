@@ -111,18 +111,22 @@ struct ContentView: View {
                         
 
                         if (Sounds.isLoaded()){
+                            print("rate:yes")
                                 if (Sounds.isPlaying()){
                                     Sounds.pause()
                                 } else {Sounds.play()}
-                        } else{
-                                                    CSNGetter.getSongUrl(query: "all i want for christmas"){ result in
                             
-                                                        print(result)
-                                                    print("f")
-                                                    self.albumarturl = result.arturl
-                                                    self.artist = result.artist
-                                                        self.title = result.title
-                                                        Sounds.playHttpSounds(soundfile: result.url, songdata: result)
+                        } else{
+                            print("rate:no")
+                            CSNGetter.getSongUrl(query: "all i want for christmas"){ result in
+                                if (Sounds.isLoaded()){
+print(result)
+print("f")
+self.albumarturl = result.arturl
+ self.artist = result.artist
+ self.title = result.title
+  Sounds.playHttpSounds(soundfile: result.url, songdata: result)
+                                }
                             
                                                     }
                         }

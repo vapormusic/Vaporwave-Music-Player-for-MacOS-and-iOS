@@ -11,8 +11,11 @@ import UIKit
 
    static var audioPlayer:AVPlayer?
     
+
+    
     static func play(){
         audioPlayer?.play()
+        
     }
     
     static func pause(){
@@ -27,15 +30,21 @@ import UIKit
     }
     
     static func isLoaded() -> Bool {
+        print("rate:\(audioPlayer?.rate != nil)")
         if ((audioPlayer?.rate != nil)) {
             // player is playing
-            return false
-        } else {return true}    }
+            
+            return true
+        } else {return false}
+        
+        
+    }
 
     static func playHttpSounds(soundfile: String, songdata: SongData) {
         
         
-        
+        var ptime: CMTime = CMTime()
+        var seektimechanged : Bool = true
         let commandCenter = MPRemoteCommandCenter.shared()
         #if os(iOS)
      let audioSession = AVAudioSession.sharedInstance()
@@ -83,7 +92,7 @@ import UIKit
 //                     })
 //                         .resume()
 //                 }
-                func setupNowPlaying(songinfo : SongData) {
+                func setupNowPlaying(songinfo : SongData, paused : Bool, pausedtime : CMTime) {
                   
                     
                     SDWebImageDownloader.shared.downloadImage(with: URL(string: songinfo.arturl),completed: {(image,data,error,true)  in
@@ -92,7 +101,11 @@ import UIKit
                         nowPlayingInfo[MPMediaItemPropertyTitle] = songinfo.title
                         nowPlayingInfo[MPMediaItemPropertyArtist] = songinfo.artist
                         nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = CMTimeGetSeconds(playerItem.asset.duration)
-                        nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = CMTimeGetSeconds(playerItem.currentTime())
+                        if(paused == true){
+                            nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = CMTimeGetSeconds(pausedtime)
+                            
+                        }else{
+                            nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = CMTimeGetSeconds(playerItem.currentTime())}
                         print(CMTimeGetSeconds(playerItem.asset.duration))
                         #if os(iOS)
                         do {
@@ -123,21 +136,50 @@ import UIKit
                      
                 }
                 DispatchQueue.main.async {
-                    setupNowPlaying(songinfo: songdata)}
+                    setupNowPlaying(songinfo: songdata, paused: false, pausedtime: CMTime())}
+                
+                func changetime(time :CMTime){
+                   
+                    MPNowPlayingInfoCenter.default().nowPlayingInfo?[MPNowPlayingInfoPropertyElapsedPlaybackTime] = CMTimeGetSeconds(time)
+                }
+                
                
                 func setupRemoteTransportControls() {
-                    commandCenter.pauseCommand.addTarget { (_) -> MPRemoteCommandHandlerStatus in
+                    commandCenter.pauseCommand.addTarget { event -> MPRemoteCommandHandlerStatus in
 
                          // Pause media
+                       print("timebefore : \(CMTimeGetSeconds(playerItem.currentTime()))")
+                         
                         audioPlayer?.pause()
+                        let ptime2 = playerItem.currentTime()
+              
+                            if(!seektimechanged){
+                                changetime(time: ptime)
+                                seektimechanged = true
+                  
+                            }
+                            print("timebefore2 : \(CMTimeGetSeconds(ptime2))")
+                            ptime = ptime2
+                            seektimechanged = false
+                            
+                        
                         #if os(macOS)
                         MPNowPlayingInfoCenter.default().playbackState = .paused
                         #endif
+                        
                         return .success
                      }
 
                      commandCenter.playCommand.addTarget { (_) -> MPRemoteCommandHandlerStatus in
                                                  // Play media
+                        print(ptime)
+                  
+                            if(!seektimechanged){
+                            changetime(time: ptime)
+                                seektimechanged = true
+                                
+                            }
+                        
                         audioPlayer?.play()
                         #if os(macOS)
                         MPNowPlayingInfoCenter.default().playbackState = .playing
@@ -148,7 +190,10 @@ import UIKit
                     commandCenter.changePlaybackPositionCommand.isEnabled = true
                     commandCenter.changePlaybackPositionCommand.addTarget { event -> MPRemoteCommandHandlerStatus in
                         let event = event as! MPChangePlaybackPositionCommandEvent
+                        ptime = CMTimeMakeWithSeconds(event.positionTime,preferredTimescale: 1000)
+                        seektimechanged = false
                         audioPlayer?.seek(to: CMTimeMakeWithSeconds(event.positionTime,preferredTimescale: 1000))
+                        
                         return .success
                     }
                     commandCenter.togglePlayPauseCommand.addTarget { (_) -> MPRemoteCommandHandlerStatus in
